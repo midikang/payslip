@@ -5,7 +5,7 @@ class SessionsController < Clearance::SessionsController
 
     sign_in(@user) do |status|
       if status.success?
-        redirect_to root_path, notice:"Sign in successfully" and return
+        redirect_to root_path, notice: t("notice.sign_in_successfully") and return
       else
         redirect_to :back, notice: "#{status.failure_message}"
       end
@@ -14,7 +14,7 @@ class SessionsController < Clearance::SessionsController
 
   def destroy
     sign_out
-    redirect_to root_path, notice: "sign out successfully"
+    redirect_to root_path, notice: t("notice.sign_out_successfully")
   end
 
   def new

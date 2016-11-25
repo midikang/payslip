@@ -12,7 +12,7 @@ module Payslip
     config.generators.helper = false
 
     config.time_zone = 'Beijing'
-    config.i18n.available_locales = [:en, :'zh-CN']
+    config.i18n.available_locales = [ :en,:'zh-CN']
     config.i18n.default_locale = :'zh-CN'
 
     config.lograge.enabled = false

@@ -1,11 +1,11 @@
-- title "注册"
+- title t(".title")
 .clearance.sign-up
   .ui.middle.aligned.center.aligned.grid
     .column
       %h2.ui.teal.image.header
         %i.payment.icon
         .content
-          Sign-up
+          = t("sessions.form.sign_up")
       = form_for @user, html: {class:'ui large form user_signup'} do |form|
         .ui.stacked.segment
           .field
@@ -16,7 +16,7 @@
             .ui.left.icon.input
               %i.lock.icon
               = form.password_field :password
-          = form.submit "Sign up", class:'ui fluid large teal submit button'
+          = form.submit t("sessions.form.sign_up"), class:'ui fluid large teal submit button'
         .ui.error.message
         .other-links
           = link_to t(".sign_in"), sign_in_path

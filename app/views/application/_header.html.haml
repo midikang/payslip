@@ -4,8 +4,8 @@
       .ui.large.secondary.menu
         = link_to "PAYSLIP",root_path, class:"item #{nav_active(path: 'dashboard#index')}"
         - if current_user
-          = link_to "DEPARTMENT", namespace_index_path, class:"item #{nav_active(path: 'namespace#index')}"
-          = link_to "EMPLOYEE", employee_index_path, class:"item #{nav_active(path: 'employee#index')}"
+          = link_to t("header.department"), namespace_index_path, class:"item #{nav_active(path: 'namespace#index')}"
+          = link_to t("header.employee"), employee_index_path, class:"item #{nav_active(path: 'employee#index')}"
         .right.item
           - if current_user
             .ui.dropdown.signed_in_dpd
@@ -14,16 +14,16 @@
               .menu
                 = link_to "javascript:void(0)", class:'item', data:  { behavior: "adddepartment" } do
                   %i.add.group.icon
-                  Add Department
+                  = t("header.add_department")
                 = link_to "javascript:void(0)", class:'item', data: { behavior: 'addemployee'  } do
                   %i.add.user.icon
-                  Add Employee
+                  = t("header.add_employee")
                 = link_to calculate_path, method: :get, class:'item' do
                   %i.calculator.icon
-                  Calculate payslip
+                  = t("header.calculate_paysplip")
                 = link_to session_path, method: :delete, class:'logout item' do
                   %i.sign.out.icon
-                  logout
+                  = t("layouts.application.sign_out")
             = render  'modal'
           - else
-            = link_to "Login", sign_in_path
+            = link_to t("layouts.application.sign_in"), sign_in_path

@@ -57,3 +57,12 @@ en:
     new:
       sign_in: Sign in
       title: Sign up
+  notice:
+    sign_in_successfully: "Sign in successfully"
+    sign_out_successfully: "Sign out successfully"
+  header:
+    department: DEPARTMENT
+    employee: EMPLOYEE
+    add_department: Add Department
+    add_employee: Add Employee
+    calculate_paysplip: Calculate payslip

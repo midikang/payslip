@@ -52,3 +52,12 @@ zh-CN:
     new:
       sign_in: 登录
       title: 注册
+  notice:
+    sign_in_successfully: 登录成功
+    sign_out_successfully: 注销成功
+  header:
+    department: 部门
+    employee: 员工
+    add_department: 新增部门
+    add_employee: 新增员工
+    calculate_paysplip: 计算工资条
