@@ -84,3 +84,12 @@ zh-CN:
     calculate: 计算
     reset: 重置
     calculate_tips: 只有个人信息确认过的用户才可以计算工资
+  employee:
+    id: 编号
+    email: 电子邮箱
+    first_name: 姓
+    last_name: 名
+    annual_salary: 年工资
+    super_rake: Super Rake
+    department_assigned: 部门(已分配)
+    operate: 操作

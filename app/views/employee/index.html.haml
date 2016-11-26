@@ -18,14 +18,22 @@
       %table.ui.green.table
         %thead
           %tr
-            %th ID
-            %th EMAIL
-            %th FIRST NAME
-            %th LAST NAME
-            %th ANNUAL SALARY
-            %th SUPER RATE
-            %th DEPARTMENT(ASSIGNED)
-            %th OPERATE
+            %th
+              = t("employee.id")
+            %th
+              = t("employee.email")
+            %th
+              = t("employee.first_name")
+            %th
+              = t("employee.last_name")
+            %th
+              = t("employee.annual_salary")
+            %th
+              = t("employee.super_rake")
+            %th
+              = t("employee.department_assigned")
+            %th
+              = t("employee.operate")
         %tbody
           - @users.each do |u|
             %tr
