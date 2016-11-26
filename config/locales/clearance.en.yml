@@ -66,3 +66,26 @@ en:
     add_department: Add Department
     add_employee: Add Employee
     calculate_paysplip: Calculate payslip
+  modal:
+    add_department: Add Department
+    add_employee: Add Employee
+    add_department_tips: using comma as token separators to add multiple departments
+    ok: OK
+    cancel: Cancel
+    employee_email: Employee Email
+    employee_password: Employee Password(default hwwhww)
+    first_name: First Name
+    last_name: Last Name
+    annual_salary: Annual Salary
+    super_rake: Super Rake
+    add_to_department: Add to Department
+    add_to_department_promot: Add employee for the department
+  dashboard:
+    create_payslip: Create Payslip
+    select_tips: Select a employee to calculate
+    select_prompt: Select Employee
+    start_date: Start Date
+    end_dae: End Date
+    calculate: Calculate
+    reset: Reset
+    calculate_tips: Only these users who personal information are improved can calculate salary

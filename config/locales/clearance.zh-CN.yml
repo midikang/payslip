@@ -61,3 +61,26 @@ zh-CN:
     add_department: 新增部门
     add_employee: 新增员工
     calculate_paysplip: 计算工资条
+  modal:
+    add_department: 新增部门
+    add_employee: 新增员工
+    add_department_tips: 多个部门用逗号(;)区分
+    ok: 确定
+    cancel: 取消
+    employee_email: 员工电子邮箱
+    employee_password: "员工密码(默认为: hwwhww)"
+    first_name: 姓
+    last_name: 名
+    annual_salary: 年工资
+    super_rake: Super Rake
+    add_to_department: 添加到部门
+    add_to_department_promot: 添加员工到部门
+  dashboard:
+    create_payslip: 创建工资条
+    select_tips: 选择员工
+    select_prompt: 选择员工
+    start_date: 起始时间
+    end_dae: 截止时间
+    calculate: 计算
+    reset: 重置
+    calculate_tips: 只有个人信息确认过的用户才可以计算工资

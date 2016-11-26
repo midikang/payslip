@@ -1,57 +1,57 @@
 .ui.modal.small.add_department_modal
   %i.close.icon
   .header
-    Add Department
+    = t("modal.add_department")
   .content
     = form_tag namespace_index_path, {class:'ui form add_department_form'} do |f|
       .field
         %label
-          using comma as token separators to add multiple departments
+          = t("modal.add_department_tips")
         = select_tag  :namespace, nil, :multiple => true, class:'namespace_selector ui multiple search dropdown'
   .actions
     .ui.black.deny.button
-      Cancel
+      = t("modal.cancel")
     .ui.positive.right.labeled.icon.button
-      OK
+      = t("modal.ok")
       %i.checkmark.icon
 .long.ui.modal.small.add_employee_modal
   %i.close.icon
   .header
-    Add Employee
+    = t("modal.add_employee")
   .content
     = form_for User.new, :html => {class:'ui form add_employee_form'} do |f|
       .field
         %label
-          employee email
+          = t("modal.employee_email")
         = f.text_field :email
       .field
         %label
-          employee password(default hwwhww)
+          = t("modal.employee_password")
         = f.password_field  :password, value: 'hwwhww'
       .field
         %label
-          employee first name
+          = t("modal.first_name")
         = f.text_field  :first_name
       .field
         %label
-          employee last name
+          = t("modal.last_name")
         = f.text_field  :last_name
       .field
         %label
-          Annual salary
+          = t("modal.annual_salary")
         = f.text_field  :annual_salary
       .field
         %label
-          super rake
+          = t("modal.super_rake")
         = f.text_field  :super_rate
       - if Namespace.all.present?
         .field
           %label
-            Add to department
-          = select_tag  :department, options_from_collection_for_select(Namespace.all, "id","name"), { prompt:'Add employee for the department', class:'add_to_department ui search dropdown' }
+            = t("modal.add_to_department")
+          = select_tag  :department, options_from_collection_for_select(Namespace.all, "id","name"), { prompt: t("modal.add_to_department_promot"), class:'add_to_department ui search dropdown' }
   .actions
     .ui.black.deny.button
-      Cancel
+      = t("modal.cancel")
     .ui.positive.right.labeled.icon.button
-      OK
+      = t("modal.ok")
       %i.checkmark.icon

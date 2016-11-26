@@ -1,22 +1,22 @@
-- title 'create payslip'
+- title t("dashboard.create_payslip")
 .ui.container
   = form_tag result_path, { method: :post, remote: true, class:'ui form calculate_form'} do |f|
     .ui.error.message
     .ui.very.padded.segment
       .field
         %label
-          select a employee to calculate
-        = select_tag  :employee, options_from_collection_for_select(@collections, "id","full_name"), { prompt:'select employee', class:'employee_calculate ui search dropdown' }
+          = t("dashboard.select_tips")
+        = select_tag  :employee, options_from_collection_for_select(@collections, "id","full_name"), { prompt: t("dashboard.select_prompt"), class:'employee_calculate ui search dropdown' }
       .field
         %label
-          Start Date
+          = t("dashboard.start_date")
         = text_field_tag  :start, nil, data: { toggle: "datepicker" }
       .field
         %label
-          End Date
+          = t("dashboard.end_dae")
         = text_field_tag  :end, nil, data: { toggle: "datepicker" }
-      = submit_tag  :Calculate, class:'tiny ui green button'
-      = link_to  "Reset", "javascript:void(0)", class:'tiny ui reset button', data: { behavior: "resetcalculateform" }
+      = submit_tag  t("dashboard.calculate"), class:'tiny ui green button'
+      = link_to  t("dashboard.reset"), "javascript:void(0)", class:'tiny ui reset button', data: { behavior: "resetcalculateform" }
       %span.desc
-        Only these users who personal information are improved  can calculate salary
+        = t("dashboard.calculate_tips")
   .result_list
